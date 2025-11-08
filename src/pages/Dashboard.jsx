@@ -10,8 +10,8 @@ export default function Dashboard() {
     const token = localStorage.getItem("token");
     if (!token) return navigate("/login");
 
-    axios
-      .get("http://localhost:5000/api/me", {
+   axios.get("https://google-auth-backend-vaei.onrender.com/api/me", {
+
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => setUserData(res.data))

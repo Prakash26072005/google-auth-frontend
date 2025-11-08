@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Login() {
   const handleGoogleLogin = () => {
-    window.location.href = "http://localhost:5000/auth/google";
+    window.location.href =  "https://google-auth-backend-vaei.onrender.com/auth/google";;
   };
 
   return (
